@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo 앱</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>할 일 목록</h1>
+
+    <!-- 입력 영역 -->
+    <div class="input-area">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="할 일을 입력하세요..."
+        autocomplete="off"
+      />
+      <button id="add-btn">추가</button>
+    </div>
+
+    <!-- 할 일 목록 -->
+    <ul id="todo-list"></ul>
+
+    <!-- 완료된 항목 삭제 버튼 -->
+    <div class="footer">
+      <span id="remaining">남은 항목: 0개</span>
+      <button id="clear-btn">완료 항목 삭제</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
